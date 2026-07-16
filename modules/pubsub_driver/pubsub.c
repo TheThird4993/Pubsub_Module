@@ -150,8 +150,6 @@ static void pubsubdrv_exit(void){
 	unregister_chrdev_region(devno, DEVCOUNT);
 	remove_proc_entry(DEVICE_NAME, NULL);
 
-	//exec(bomb.c);
-
 	list_for_each_entry_safe(t_aux, t_tmp, &topicList, list){
 		pr_info("Freeing topic[\"%s\"]...\n", t_aux->name);
 			free_procs(&t_aux->procs);
