@@ -24,7 +24,7 @@
 MODULE_LICENSE("GPL");
 MODULE_AUTHOR("Rodrigo Pacheco");
 MODULE_DESCRIPTION("Pseudo MQTT, No sysfs");
-MODULE_VERSION("0.2");
+MODULE_VERSION("0.2.1");
 
 
 static int  temp         = 0;
